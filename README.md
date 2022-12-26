@@ -2,12 +2,19 @@
 
 <hr>
 
-<p align="center"> <img src="https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png" alt="Logo da Alura"> </p>
-<p align="center">Formulário de criação de contas para o banco virtual MoniBank.</p>
+# MoniBank
 
-## Tecnologias utilizadas durante o curso
-* JavaScript
+Este projeto foi desenvolvido durante o curso [JS: validando formulários](https://www.alura.com.br/curso-online-javascript-validando-formularios) da plataforma Alura,
+a partir de um [projeto base](https://github.com/alura-cursos/monibank/tree/main). 
 
-## Tecnologias utilizadas no projeto
+O MoniBank é o site de um banco virtual. Nele fiz a validação de formulários para criação de contas.
+
+## Tecnologias utilizadas no curso
 * HTML
-* CSS
+* Javascript
+
+## Conceitos aprendidos
+
+* Validação com HTML: Required, input-Type, min-length e max-length
+* Pattern e regex
+* Validação com JS

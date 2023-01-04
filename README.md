@@ -16,5 +16,5 @@ O MoniBank é o site de um banco virtual. Nele fiz a validação de formulários
 ## Conceitos aprendidos
 
 * Validação com HTML: Required, input-Type, min-length e max-length
-* Pattern e regex
-* Validação com JS
+* Pattern com regex(expressões regulares)
+* Validação com JS - verificação de cpf

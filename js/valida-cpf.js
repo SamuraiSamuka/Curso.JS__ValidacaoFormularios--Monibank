@@ -5,6 +5,7 @@ export default function ehUmCPF(campo) {
         validaPrimeiroDigito(cpf)? console.log('primeiro dígito inválido'):
             validaSegundoDigito(cpf)? console.log('segundo dígito inválido'):
             console.log("CPF válido!");
+    console.log(gerarCpfValidoAleatorio())
     // console.log(validaPrimeiroDigito(cpf))
 }
 
@@ -40,8 +41,8 @@ function validaPrimeiroDigito(cpf, gerarDigito) {
     }
 
     if(gerarDigito){
-        console.log(gerarDigito)
-        return cpf.concat(soma)
+        console.log(soma)
+        return soma
     } else {
         return soma != cpf[9]
     }
@@ -63,15 +64,16 @@ function validaSegundoDigito(cpf, gerarDigito) {
         soma = 0;
     }
 
-    if(gerarDigito === true){
-        return cpf.toString().concat(soma)
+    if(gerarDigito){
+        console.log(soma)
+        return soma
     } else {
         return soma != cpf[10]
     }
 
 }
 
-function geraCpfAleatorio(){
+function gerarCpfValidoAleatorio(){
     let numeroAleatorio = Math.floor(Math.random()*1000000000)
     
     while (validaNumerosRepetidos(numeroAleatorio, 9)){
@@ -79,9 +81,11 @@ function geraCpfAleatorio(){
         numeroAleatorio = Math.floor(Math.random()*1000000000)
     }
 
-    numeroAleatorio = validaPrimeiroDigito(numeroAleatorio, true)
+    let cpfAleatorio = numeroAleatorio.toString()
+    cpfAleatorio = cpfAleatorio.concat(validaPrimeiroDigito(cpfAleatorio, true))
+    cpfAleatorio = cpfAleatorio.concat(validaSegundoDigito(cpfAleatorio, true))
     
-    return numeroAleatorio
+    return cpfAleatorio
 }
 
 /*

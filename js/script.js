@@ -8,7 +8,7 @@ camposDoFormulario.forEach((campo) => {
 
 
 function verificaCampo(campo) {
-    if (campo.name == 'cpf' && campo.value.length >= 11) {
+    if (campo.name == 'cpf' && campo.value.length >= 9) {
         ehUmCPF(campo);
     }
 }

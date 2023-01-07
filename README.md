@@ -21,3 +21,4 @@ O MoniBank é o site de um banco virtual. Nele fiz a validação de formulários
     * Validar CPF através do 1º e 2º dígito verificador
     * Gerar CPFs validos aleatórios
     * Validar idades por meio de datas
+    * Tratamento de erros com validityState

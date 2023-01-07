@@ -36,9 +36,7 @@ const mensagens = {
 
 camposDoFormulario.forEach((campo) => {
     campo.addEventListener("blur", () => { verificaCampo(campo) });
-    campo.addEventListener("invalid", (event) => {
-        event.preventDefault()
-    })
+    campo.addEventListener("invalid", (event) => { event.preventDefault() })
 })
 
 const tiposDeErro = [

@@ -22,3 +22,7 @@ O MoniBank é o site de um banco virtual. Nele fiz a validação de formulários
     * Gerar CPFs validos aleatórios
     * Validar idades por meio de datas
     * Tratamento de erros com validityState
+        * ValueMissing, patternMismatch, typeMismatch, customError, tooShort e valid;
+        * setCustomValidity();
+    
+    

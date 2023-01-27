@@ -18,3 +18,39 @@ body {
 .cabecalho__logo-link {
     text-decoration: none;
 }
+
+.container-aviso {
+    position: relative;
+    width: fit-content;
+}
+
+.aviso {
+    display: none;
+    position: fixed;
+    top: 130px;
+    left: 650px;
+    text-align: center;
+    color: gray;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px gray;
+    padding: 10px;
+}
+
+@keyframes aviso {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
